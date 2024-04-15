@@ -3783,3 +3783,26 @@ input, select, textarea {
 			}
 
 		}
+
+/* Blockquote */
+
+blockquote {
+	position: relative; /* Needed for absolute positioning of the pseudo-element */
+	font-size: 20px;
+	margin: 20px;
+	padding: 20px 20px 20px 60px; /* Increased left padding to accommodate the quote icon */
+	border-left: 5px solid gray;
+	text-align: left; /* Ensures the text is left-aligned */
+	background-color: transparent; /* Removes background color */
+	border-left: none; /* Removes the left border */
+
+}
+
+blockquote:before {
+	content: '“'; /* Large quotation mark */
+	position: absolute;
+	left: 10px; /* Adjust the position as needed */
+	top: 10px; /* Adjust the position as needed */
+	font-size: 40px; /* Large size for visibility */
+	color: gray; /* Matching the style of the border */
+}
