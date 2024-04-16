@@ -3793,8 +3793,10 @@ blockquote {
 	padding: 20px 20px 20px 60px; /* Increased left padding to accommodate the quote icon */
 	border-left: 5px solid gray;
 	text-align: left; /* Ensures the text is left-aligned */
-	background-color: transparent; /* Removes background color */
+	background-color: #f5f5f5; /* Removes background color */
 	border-left: none; /* Removes the left border */
+	border-radius: 10px; /* Rounded corners */
+
 
 }
 
@@ -3805,4 +3807,41 @@ blockquote:before {
 	top: 10px; /* Adjust the position as needed */
 	font-size: 40px; /* Large size for visibility */
 	color: gray; /* Matching the style of the border */
+}
+
+/* Blockquote and carousel */
+
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.comment {
+    width: 100%;
+    display: none;
+}
+
+.comment.active {
+    display: block;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
 }
